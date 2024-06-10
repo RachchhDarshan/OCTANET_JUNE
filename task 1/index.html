@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b0e25a1433.js" crossorigin="anonymous"></script>
+    <title>Fine Fragrance</title>
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#" ><img src="/img/ff2.png" class="logo"/></a>
+        <ul>
+          <li><a href="#">Home</a><br /></li>
+          <li><a href="#">About Us</a><br /></li>
+          <li><a href="#">Gallery</a><br /></li>
+          <li><a href="#">Contect</a><br /></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+            <h4>
+                Welcome To Fragrance Zone<br>
+                <span class="span">Smell 'n' Smile</span>
+            </h4>
+            <p>All type of Room Freshener are available at our shop <br> Automatic Air Freshener Machine With Remote Or Without Remote available
+                <br><br>Click And Go to Web Site and See More Product </p>
+            <a href="#" class="btn">Fine Fragrance</a>
+            </div>
+            <div class="imgBox">
+              <img src="img/f1.png" class="fragrance" alt="">
+            </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="img/r1.png" alt="" onclick="imgSlider('img/f1.png');changeColor('#3F588D')"></li>
+        <li><img src="img/r2.png" alt="" onclick="imgSlider('img/f2.png');changeColor('#21afd6')"></li>
+        <li><img src="img/r3.png" alt="" onclick="imgSlider('img/f3.png');changeColor('#08a772')"></li>
+      </ul>
+      <ul class="sci">
+        <li><i class="fa-solid fa-globe"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+      
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.fragrance').src = anything;
+      }
+      function changeColor(color){
+        const circle = document.querySelector(".circle");
+        const btn = document.querySelector(".btn");
+        const span = document.querySelector(".span")
+        circle.style.background = color;
+        btn.style.background = color;
+        span.style.color = color
+      }
+    </script>
+  </body>
+</html>
